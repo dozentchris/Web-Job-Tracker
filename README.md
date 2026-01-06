@@ -37,13 +37,9 @@ python app.py
 
 ## 📸 Screenshots
 
-HEADER: | Dashboard        | Statistics     | Edit Form      |
-                        ↑↑↑↑↑↑↑        ↑↑↑↑↑↑        ↑↑↑↑↑↑↑↑↑↑
-                        10 Spaces       8 Spaces      10 Spaces
-
-CONTENT: | ![Dashboard](...) | ![Stats](...) | ![Edit](...) |
-                         ↑↑↑↑↑↑↑↑↑↑     ↑↑↑↑↑↑↑     ↑↑↑↑↑↑↑↑↑↑↑
-                         11 Spaces       8 Spaces     11 Spaces
+| Dashboard        | Statistics     | Edit Form      |
+|------------------|----------------|----------------|
+| ![Dashboard](screenshots/dashboard.png) | ![Stats](screenshots/stats.png) | ![Edit](screenshots/edit.png) |
 
 ## 🛠️ Tech Stack  
 
@@ -74,12 +70,12 @@ C:.
 │       dashboard.png
 │       edit.png
 │       stats.png
-│       
-├───templates
-│       base.html
-│       edit.html
-│       index.html
-│       stats.html
+│
+└───templates
+        base.html
+        edit.html
+        index.html
+        stats.html
 ```  
 
 **💼 Made with ❤️ in Hamburg | [🔗 LinkedIn](https://www.linkedin.com/in/farzaneh-soghani/)**
