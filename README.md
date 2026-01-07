@@ -8,7 +8,7 @@ Speichere Firmen, Positionen, Status & Deadlines. **Bringe Ordnung in deine Jobs
 
 ## 🌐 Live Demo
 
-[![Live Demo](https://img.shields.io/badge/Live-Coming%20Soon-blue)](https://web-job-tracker.onrender.com)
+[![Live Demo](https://img.shields.io/badge/Live-Deployed-brightgreen?logo=render)](https://web-job-tracker-3.onrender.com)
 
 ## 🚀 Features
 
