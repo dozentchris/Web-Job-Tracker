@@ -12,7 +12,13 @@ class JobManager:
         try:
             with open(self.filename, "r", encoding="utf-8") as f:
                 data = json.load(f)
-                return [Job(d['firma'], d['position'], d['status']) for d in data]
+                jobs = []
+                for d in data:
+                    job = Job(d['firma'], d['position'], d['status'])
+                    if 'datum' in d:  
+                        job.datum = date.fromisoformat(d['datum'])
+                    jobs.append(job)
+                return jobs
         except:
             return []
     
