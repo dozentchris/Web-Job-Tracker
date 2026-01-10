@@ -1,9 +1,9 @@
-import json, os, glob, uuid
+import json, os
 from flask import Flask, render_template, request, redirect, url_for, flash, session
 from datetime import timedelta, datetime
 
 app = Flask(__name__)
-app.secret_key = 'dev-secret'
+app.secret_key = os.getenv('SECRET_KEY', 'dev-secret')
 app.permanent_session_lifetime = timedelta(days=365)
 
 @app.before_request
@@ -11,22 +11,17 @@ def make_session_permanent():
     session.permanent = True
 
 def get_user_file():
-    """Intelligente User-Datei Erkennung"""
-    # 1. Session User-ID?
-    if 'user_id' in session:
-        user_file = f"bewerbungen_{session['user_id']}.json"
-        if os.path.exists(user_file):
-            return user_file
-    
-    # 2. Suche nach EINZIGER Datei
-    user_files = glob.glob("bewerbungen_*.json")
-    if len(user_files) == 1:
-        session['user_id'] = os.path.basename(user_files[0]).replace("bewerbungen_", "").replace(".json", "")
-        return user_files[0]
-    
-    # 3. Neuer Benutzer
-    session['user_id'] = str(uuid.uuid4())
-    return f"bewerbungen_{session['user_id']}.json"
+    """ULTIMATIVER Browser-Fingerprint"""
+    # ALLE verfügbaren Headers kombinieren
+    headers = [
+        request.headers.get('User-Agent', ''),
+        request.headers.get('Accept-Language', ''),
+        request.headers.get('Accept-Encoding', ''),
+        request.remote_addr or 'localhost'
+    ]
+    fingerprint = '_'.join(headers)
+    browser_id = str(hash(fingerprint))[-15:]
+    return f"browser_{browser_id}_jobs.json"
 
 def load_jobs(user_file):
     """Jobs aus JSON laden"""
