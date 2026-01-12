@@ -3,24 +3,62 @@
 
 <head>
     <title>💼 Job-Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% block styles %}
     <style>
         html {
             height: 100%;
             margin: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
         }
 
         body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background: #ffffff;
-            font-family: Arial;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                background: #ffffff;
+                font-family: Arial;
+                margin: 0;
+                padding: 15px 15px;       
+                width: 100%;
+                overflow-x: hidden;          
+            }
+
+        .container {
+                max-width: 1000px;
+                width: 100%;
+                margin: 0 auto;
+                padding: 10px 15px;
+                box-sizing: border-box;
+            }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px 25px 15px 10px !important;  
+            }
+            
+            .form-row {
+                flex-direction: column !important;
+                gap: 15px;
+            }
+            
+            .form-row button {
+                width: 100%;  
+            }
+            
+            input, select, button {
+                width: 100% !important;
+                font-size: 16px;     
+                padding: 15px;
+                box-sizing: border-box;   
+            }
+        }    
 
         .job {
             background: #e4e4e4;
