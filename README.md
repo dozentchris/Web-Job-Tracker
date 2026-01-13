@@ -1,18 +1,19 @@
 # 💼 **JobTracker** - Bewerbungs-Tracker 📊
 
-## 🎯 Bewerbungen im Überblick
-**Flask Web-App für Bewerbungs-Management (Single-File Architektur)**
+## 🎯 Bewerbungen im Überblick  
 
+**Flask Web-App für Bewerbungs-Management (Single-File Architektur)**  
 > **Speichere Firmen, Positionen, Status & Deadlines.**  
 > **Bringe Ordnung in deine Jobsuche** - filtere, sortiere, tracke **alles auf einem Bildschirm!**
 
-📱 **Auch unterwegs? KEIN Problem!** Responsiv für **Handy + Desktop** - deine Bewerbungen immer dabei! 🚀
-> **Das eingeben: https://web-job-tracker-3.onrender.com**
+📱 **Auch unterwegs? KEIN Problem!** Responsiv für **Handy + Desktop** - deine Bewerbungen immer dabei! 🚀  
+> **Im Handy direkt im Browser eingeben: [https://web-job-tracker-3.onrender.com](https://web-job-tracker-3.onrender.com)**
 
-Oder unten auf **"Live Deployed"** Button klicken
+Oder unten auf **"Live Deployed"** Button klicken  
+
 ## 🌐 Live Demo
 
-[![Live Demo](https://img.shields.io/badge/Live-Deployed-brightgreen?logo=render)](https://web-job-tracker-3.onrender.com) 
+[![Live Demo](https://img.shields.io/badge/Live-Deployed-brightgreen?logo=render)](https://web-job-tracker-3.onrender.com)  
 
 ## 🚀 Features
 
@@ -21,7 +22,7 @@ Oder unten auf **"Live Deployed"** Button klicken
 - 💾 **Session + Browser-Fingerprint** Storage (365 Tage persistent)
 - 📈 **Live Statistics Dashboard** (`/stats`)
 - ⏱️ **Automatisches Bewerbungserstellungsdatum** (DD.MM.YYYY)
-- 🎨 **Clean Flexbox UI** + Mobile-First Design 
+- 🎨 **Clean Flexbox UI** + Mobile-First Design  
 
 ## 🏁 Quick Start
 
@@ -34,9 +35,13 @@ python app.py
 
 ## 📸 Screenshots  
 
-| Desktop Dashboard                      | Mobile Dashboard                   | Statistics                       | Edit Form                        |
-|----------------------------------------|------------------------------------|----------------------------------|----------------------------------|
-|![Desktop](screenshots/desktop.png)     |![Mobile](screenshots/mobile.png)   |![Stats](screenshots/stats.png)   |![Edit](screenshots/edit.png)     |
+| Desktop Dashboard                 | Mobile Dashboard                | Statistics                    |
+|-----------------------------------|---------------------------------|-------------------------------|
+|![Desktop](screenshots/desktop.png)|![Mobile](screenshots/mobile.png)|![Stats](screenshots/stats.png)|
+
+| Edit Form                   |
+|-----------------------------|
+|![Edit](screenshots/edit.png)|
 
 ## 🛠️ Tech Stack  
 
