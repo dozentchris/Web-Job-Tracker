@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2 style="margin-top: 80px; font-size: 25px;">📝 Notizen: {{ job.firma }} - {{ job.position }}</h2>
+    <form method="POST">
+        <textarea name="notes" placeholder="Notizen, Telefonate, nächste Schritte..." 
+                  style="width:100%; height:250px; padding:20px; box-sizing: border-box; font-size:16px; border-radius: 4px;">{{ job.notes or '' }}
+        </textarea>
+    <div class="form-row">
+        <button type="submit">Speichern</button>
+        <a href="{{ url_for('index') }}"><button>← Zurück</button></a>
+    </div>
+    </form>
+</div>
+{% endblock %}
