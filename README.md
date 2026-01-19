@@ -54,26 +54,25 @@ python app.py
 
 ```txt
 C:.
-│   .gitignore
-│   app.py
-│   LICENSE
-│   Procfile
-│   README.md
-│   requirements.txt
-│   struktur.txt
-│   
-├───screenshots
-│       desktop.png
-│       edit.png
-│       mobile.png
-│       stats.png
 │
-└───templates
-        base.html
-        edit.html
-        index.html
-        notes.html
-        stats.html
+├── app.py # Flask Backend + Bewerbungslogik
+├── requirements.txt # Flask 3.0.3 + pytest 7.4.0 + gunicorn
+├── Procfile # Render/Heroku Deployment
+├── pytest.ini # Test-Konfiguration
+├── struktur.txt # Lokale Projektnotizen
+│
+├── .github/
+│ └── workflows/
+│ └── ci.yml # GitHub Actions CI/CD
+│
+├── templates/ # HTML/Jinja2 Templates
+│ ├── index.html
+│ ├── stats.html
+│ ├── edit.html
+│ └── notes.html
+│
+└── tests/
+└── test_app.py # pytest Unit-Tests
 ```  
 
 **💼 Made with ❤️ in Hamburg | [🔗 LinkedIn](https://www.linkedin.com/in/farzaneh-soghani/)**
