@@ -18,6 +18,7 @@ Oder unten auf **"Live Deployed"** Button klicken
 ## 🚀 Features
 
 - ✅ Vollständiges **CRUD** (Create, Read, Update, Delete)
+- 📝 **Notizen** pro Bewerbungen
 - 📱 **Responsive Design** (max-width: 1000px, @media 768px)
 - 💾 **Session + Browser-Fingerprint** Storage (365 Tage persistent)
 - 📈 **Live Statistics Dashboard** (`/stats`)
