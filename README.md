@@ -36,9 +36,9 @@ python app.py
 
 ## 📸 Screenshots  
 
-| Desktop Dashboard                 | Mobile Dashboard                | Statistics                    | Edit Form                   |
-|-----------------------------------|---------------------------------|-------------------------------|-----------------------------|
-|![Desktop](screenshots/desktop.png)|![Mobile](screenshots/mobile.png)|![Stats](screenshots/stats.png)|![Edit](screenshots/edit.png)|
+| Desktop Dashboard                 | Mobile Dashboard                | Statistics                    | Edit Form                   | Notizen                       |                  
+|-----------------------------------|---------------------------------|-------------------------------|-----------------------------|-------------------------------|
+|![Desktop](screenshots/desktop.png)|![Mobile](screenshots/mobile.png)|![Stats](screenshots/stats.png)|![Edit](screenshots/edit.png)|![Notes](screenshots/notes.png)|
 
 ## 🛠️ Tech Stack  
 
